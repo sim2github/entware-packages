@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mutt
-PKG_VERSION:=1.12.2
+PKG_VERSION:=1.13.3
 PKG_RELEASE:=1
 
 PKG_SOURCE_URL:=https://bitbucket.org/mutt/mutt/downloads/ \
@@ -45,6 +45,7 @@ CONFIGURE_ARGS += \
 	--oldincludedir=$(PKG_BUILD_DIR)/. \
 	--enable-pop \
 	--enable-imap \
+	--enable-smtp \
 	--with-ssl \
 	--without-idn \
 	--disable-doc
